@@ -5,13 +5,14 @@ namespace :dev do
       show_spinner('Apagando banco de dados...') { `rails db:drop` }
       show_spinner('Criando banco de dados...') { `rails db:create` }
       show_spinner('Migrando banco de dados...') { `rails db:migrate` }
-      show_spinner('Populando banco de dados...') { `rails db:seed` }
+      `rails dev:add_coins`
+      `rails dev:add_mining_types`
     end
   end
 
   desc 'Cadastra as moedas'
   task add_coins: :environment do
-    show_spinner('Cadastrando Moedas') do
+    show_spinner('Cadastrando Moedas...') do
       coins = [
         {
           description: 'Bitcoin',
@@ -32,6 +33,21 @@ namespace :dev do
 
       coins.each do |coin|
         Coin.find_or_create_by!(coin)
+      end
+    end
+  end
+
+  desc 'Cadastro de tipos de mineração'
+  task add_mining_types: :environment do
+    show_spinner('Cadastrando tipos de mineração...') do
+      mining_types = [
+        { description: 'Proof of Work', acronym: 'PoW' },
+        { description: 'Proof of Stake', acronym: 'PoS' },
+        { description: 'Proof of Capacity', acronym: 'PoC' }
+      ]
+
+      mining_types.each do |mining_type|
+        MiningType.find_or_create_by!(mining_type)
       end
     end
   end
