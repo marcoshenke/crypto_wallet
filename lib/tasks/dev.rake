@@ -18,19 +18,19 @@ namespace :dev do
           description: 'Bitcoin',
           acronym: 'BTC',
           url_image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRExYxzyLPvZICpw3iTO9D6v1NJj7RfAmPPqg&usqp=CAU',
-          mining_type_id: MiningType.where(acronym: 'PoW')
+          mining_type: MiningType.find_by(acronym: 'PoW')
         },
         {
           description: 'Etherum',
           acronym: 'ETH',
           url_image: 'https://cryptologos.cc/logos/ethereum-eth-logo.png',
-          mining_type_id: MiningType.all.sample
+          mining_type: MiningType.all.sample
         },
         {
           description: 'Dash',
           acronym: 'DASH',
           url_image: 'https://cryptologos.cc/logos/dash-dash-logo.png',
-          mining_type_id: MiningType.all.sample
+          mining_type: MiningType.all.sample
 
         }
       ]
