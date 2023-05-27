@@ -74,3 +74,5 @@ group :test do
 end
 
 gem "tty-spinner", "~> 0.9.3"
+
+gem "rails-i18n", "~> 7.0"
