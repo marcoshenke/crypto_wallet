@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def locale(_locale)
+  def locale
     I18n.locale == :en ? 'Estados Unidos' : 'Português-BR'
   end
 
