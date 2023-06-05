@@ -45,7 +45,7 @@ gem 'bootsnap', require: false
 gem 'pry-rails'
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem 'sassc-rails'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -73,6 +73,6 @@ group :test do
   gem 'webdrivers'
 end
 
-gem "tty-spinner", "~> 0.9.3"
+gem 'tty-spinner', '~> 0.9.3'
 
-gem "rails-i18n", "~> 7.0"
+gem 'rails-i18n', '~> 7.0'
