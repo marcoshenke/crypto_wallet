@@ -76,3 +76,8 @@ end
 gem 'tty-spinner', '~> 0.9.3'
 
 gem 'rails-i18n', '~> 7.0'
+
+gem 'bootstrap'
+
+
+gem "htmlbeautifier", "~> 1.4"

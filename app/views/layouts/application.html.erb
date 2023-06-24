@@ -2,21 +2,21 @@
 <html>
   <head>
     <title>CryptoWallet</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "scaffolds", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag params[:controller], "data-turbo-track": "reload" %>
-   
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <%= csrf_meta_tags %> 
+    <%= csp_meta_tag %> 
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %> 
+    <%= stylesheet_link_tag "scaffolds", "data-turbo-track": "reload" %> 
+    <%= stylesheet_link_tag  params[:controller], "data-turbo-track": "reload" %> 
     <%= javascript_importmap_tags %>
-    <%= javascript_importmap_tags params[:controller]%>
   </head>
 
   <body>
     <h1>CABEÇALHO</h1>
-    <%= yield %>
+    <%= render partial:'shared/navbar'%> <%= yield %>
     <h1>RODA PÉ</h1>
   </body>
+  <script>
+    $.notify('Hello World')
+  </script>
 </html>
