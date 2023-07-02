@@ -1,15 +1,30 @@
----
 pt-BR:
-  actual_locale: Português (Brasil)
-  hello: "Olá mundo"
+  current_locale: 'Português do Brasil'
+  welcome: 'Seja Bem-Vindo!'
+  messages:
+    welcome: 'Esse é o Crypto Wallet, uma app para você cadastrar e acompanhar as suas Cryptos favoritas'
+    menu: 'Para começar selecione uma das opções abaixo:'
+    confirm: Tem certeza?
+  hello: 'Olá mundo'
   links:
     edit: Editar
     show: Mostrar
     delete: Apagar
+    new: Novo
+    home: Voltar a página principal
+  new:
+    coin: 'Nova Moeda'
+    mining_type: Novo Tipo de Mineração
+  editing:
+    coin: Editando Moeda
+    mining_type: Editando Tipo de Mineração
+  showing:
+    coin: Mostrando Moeda
+    mining_type: Mostrando Tipo de Mineração
   activerecord:
     errors:
       messages:
-        record_invalid: "A validação falhou: %{errors}"
+        record_invalid: 'A validação falhou: %{errors}'
         restrict_dependent_destroy:
           has_one: Não é possível excluir o registro pois existe um %{record} dependente
           has_many: Não é possível excluir o registro pois existem %{record} dependentes
@@ -45,9 +60,9 @@ pt-BR:
       - sexta-feira
       - sábado
     formats:
-      default: "%d/%m/%Y"
-      long: "%d de %B de %Y"
-      short: "%d de %B"
+      default: '%d/%m/%Y'
+      long: '%d de %B de %Y'
+      short: '%d de %B'
     month_names:
       -
       - janeiro
@@ -91,20 +106,20 @@ pt-BR:
         one: mais de %{count} ano
         other: mais de %{count} anos
       x_seconds:
-        one: "%{count} segundo"
-        other: "%{count} segundos"
+        one: '%{count} segundo'
+        other: '%{count} segundos'
       x_minutes:
-        one: "%{count} minuto"
-        other: "%{count} minutos"
+        one: '%{count} minuto'
+        other: '%{count} minutos'
       x_days:
-        one: "%{count} dia"
-        other: "%{count} dias"
+        one: '%{count} dia'
+        other: '%{count} dias'
       x_months:
-        one: "%{count} mês"
-        other: "%{count} meses"
+        one: '%{count} mês'
+        other: '%{count} meses'
       x_years:
-        one: "%{count} ano"
-        other: "%{count} anos"
+        one: '%{count} ano'
+        other: '%{count} anos'
     prompts:
       second: Segundo
       minute: Minuto
@@ -113,7 +128,7 @@ pt-BR:
       month: Mês
       year: Ano
   errors:
-    format: "%{attribute} %{message}"
+    format: '%{attribute} %{message}'
     messages:
       accepted: deve ser aceito
       blank: não pode ficar em branco
@@ -129,7 +144,7 @@ pt-BR:
       invalid: não é válido
       less_than: deve ser menor que %{count}
       less_than_or_equal_to: deve ser menor ou igual a %{count}
-      model_invalid: "A validação falhou: %{errors}"
+      model_invalid: 'A validação falhou: %{errors}'
       not_a_number: não é um número
       not_an_integer: não é um número inteiro
       odd: deve ser ímpar
@@ -138,19 +153,19 @@ pt-BR:
       required: é obrigatório(a)
       taken: já está em uso
       too_long:
-        one: "é muito longo (máximo: %{count} caracter)"
-        other: "é muito longo (máximo: %{count} caracteres)"
+        one: 'é muito longo (máximo: %{count} caracter)'
+        other: 'é muito longo (máximo: %{count} caracteres)'
       too_short:
-        one: "é muito curto (mínimo: %{count} caracter)"
-        other: "é muito curto (mínimo: %{count} caracteres)"
+        one: 'é muito curto (mínimo: %{count} caracter)'
+        other: 'é muito curto (mínimo: %{count} caracteres)'
       wrong_length:
         one: não possui o tamanho esperado (%{count} caracter)
         other: não possui o tamanho esperado (%{count} caracteres)
     template:
-      body: "Por favor, verifique o(s) seguinte(s) campo(s):"
+      body: 'Por favor, verifique o(s) seguinte(s) campo(s):'
       header:
-        one: "Não foi possível gravar %{model}: %{count} erro"
-        other: "Não foi possível gravar %{model}: %{count} erros"
+        one: 'Não foi possível gravar %{model}: %{count} erro'
+        other: 'Não foi possível gravar %{model}: %{count} erros'
   helpers:
     select:
       prompt: Por favor selecione
@@ -161,22 +176,22 @@ pt-BR:
   number:
     currency:
       format:
-        delimiter: "."
-        format: "%u %n"
+        delimiter: '.'
+        format: '%u %n'
         precision: 2
-        separator: ","
+        separator: ','
         significant: false
         strip_insignificant_zeros: false
         unit: R$
     format:
-      delimiter: "."
+      delimiter: '.'
       precision: 3
-      separator: ","
+      separator: ','
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: "%n %u"
+        format: '%n %u'
         units:
           billion:
             one: bilhão
@@ -191,14 +206,14 @@ pt-BR:
           trillion:
             one: trilhão
             other: trilhões
-          unit: ""
+          unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
+        format: '%n %u'
         units:
           byte:
             one: Byte
@@ -211,20 +226,20 @@ pt-BR:
           tb: TB
     percentage:
       format:
-        delimiter: "."
-        format: "%n%"
+        delimiter: '.'
+        format: '%n%'
     precision:
       format:
-        delimiter: "."
+        delimiter: '.'
   support:
     array:
-      last_word_connector: " e "
-      two_words_connector: " e "
-      words_connector: ", "
+      last_word_connector: ' e '
+      two_words_connector: ' e '
+      words_connector: ', '
   time:
-    am: ""
+    am: ''
     formats:
-      default: "%a, %d de %B de %Y, %H:%M:%S %z"
-      long: "%d de %B de %Y, %H:%M"
-      short: "%d de %B, %H:%M"
-    pm: ""
+      default: '%a, %d de %B de %Y, %H:%M:%S %z'
+      long: '%d de %B de %Y, %H:%M'
+      short: '%d de %B, %H:%M'
+    pm: ''
